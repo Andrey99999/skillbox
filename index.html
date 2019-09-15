@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skillbox-test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Стоимость обучения</h1>
+
+    <div class="container">
+      <div class="flex__container">
+        
+        <!--  LEFT BLOCK COURSE PRICE -->
+        <div class="course__price">
+          <!--  SALE TOP BLOCK -->
+          <div class="sale__block">
+            <p class="sale">Скидка</p>
+            <p class="sale__percent">40 % </p>
+            <p>первым 20</p>
+          </div>
+          <!--  SALE TEXT   -->
+          <p class="full__price">Полная стоимость курса</p>
+          <p class="full__price--through">50 000 &#8381;</p>
+          <p class="month__price">2 900 &#8381;</p>
+          <p class="not__payment">Рассрочка без первого взноса</p>
+          <p class="best__price-year">29 000 &#8381;</p>
+          <p class="best__price">Для первых 20-ти</p>
+        </div>
+
+        <!--  RIGHT BLOCK COURSE REGISTRATION -->
+        <div class="course__registration">
+          <h2>Запишитесь на курс</h2>
+
+          <!-- PHONE LIST -->
+          <ul class="phone__list">
+            <li><a href="#">Телефон</a></li>
+            <li><a href="#">Телефон</a></li>
+            <li><a href="#">Телефон</a></li>
+            <li><a href="#">Телефон</a></li>
+          </ul>
+
+          <div class="course__start">
+            <p>Старт курса: <span class="desktop">7 сентября</span><span class="tablet">15 июня</span><span class="phone">15 июля</span></p>
+            <p class="total">Осталось: <span class="desktop">19 мест</span><span class="tablet">15 мест</span><span class="phone">12 мест</span></p>
+          </div>
+
+          <!-- FORM -->
+            <form id="form">
+
+              <div>
+                  <input type="text" placeholder="Имя" id="input__name">
+                  <p class="error error__name"></p>
+              </div>
+              <div>
+                  <input type="text" placeholder="Телефон" id="input__phone">
+                  <p class="error error__phone"></p>
+              </div>
+              <div>
+                  <input type="text" placeholder="Email" id="input__email">
+                  <p class="error error__email"></p>
+              </div>
+              <div class="form__btn">
+                  <input type="submit" id="btn__submit" class="btn__submit" value="Записаться">
+              </div>
+
+              <div class="checkbox">
+                  <input type="checkbox" id="check">
+                  <label for="check" id="label__check"><span class="checkbox__checked">Я согласен с условиями обработки<br>
+                      <a href="#">персональных данных</a>
+                  </span></label>
+                  <p class="error error__check"></p>
+              </div>
+            
+            </form>
+
+        </div>  <!-- .course__registration  -->
+      </div>  <!-- .flex__container -->
+    </div>  <!-- .container -->
+    <script src="js/index.js"></script>
+  </body>
+</html>

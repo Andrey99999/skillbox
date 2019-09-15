@@ -1,0 +1,566 @@
+/* fonts   */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+  url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot");
+  src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"),
+  url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+  url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+}  /* fonts   end  */
+
+/* BASE */
+*, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #F6F7FD;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 33px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  margin: 65px 0 67px;
+}
+
+p {
+  color: #fff;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+.flex__container {
+  display: flex;
+  width: 100%;
+}
+
+.course__price {
+  position: relative;
+  background: #3D3BFF;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  width: 50%;
+}
+
+/*    SALE    */
+.sale__block {
+  width: 110px;
+  background: #000;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  border-bottom-width: 20px;
+  /* padding: 0 23px; */
+  position: relative;
+  margin: -20px auto;
+}
+
+.sale__block:before {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 0px;
+  top: 98px;
+  border-top: 20px solid #000;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+  }
+
+.sale {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 21px 0 7px;
+}
+
+.sale__percent {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 28px;
+  letter-spacing: -0.75px;
+}
+
+.sale__block p:last-child {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  opacity: 0.7;
+  padding-top: 3px;
+}
+
+/*  LEFT BLOCK COURSE PRICE  */
+.full__price {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  opacity: 0.5;
+  margin: 184px 0 8px;
+}
+
+.full__price--through {
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.month__price {
+  font-family: RobotoSlab, sans-serif;
+  font-size: 80px;
+  line-height: 100px;
+  letter-spacing: -2px;
+  margin-top: 8px;
+}
+
+.not__payment {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 10px;
+  letter-spacing: -0.5px;
+  margin-bottom: 35px;
+}
+
+.best__price-year {
+  font-family: RobotoSlab, sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 66px;
+  letter-spacing: -2px;
+}
+
+.best__price {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: -0.5px;
+  margin-bottom: 237px;
+}
+
+/*  RIGHT BLOCK COURSE REGISTRATION  */
+.course__registration {
+  background: #FAFBFE;
+  box-shadow: 0px 2px 24px rgba(168, 175, 196, 0.3);
+  padding-left: 85px;
+  width: 50%;
+}
+
+h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: #000;
+  margin: 57px 0 24px;
+}
+/*  PHONE  */
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phone__list li {
+  position: relative;
+  padding-left: 16px;
+  padding-bottom: 12px;
+}
+
+.phone__list li:before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: -1px;
+  top: 11px;
+  background: #3D3BFF;
+  border-radius: 50%;
+}
+
+.phone__list li a { 
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: #657195;
+  text-decoration: none;
+}
+
+/*  COURSE START  */
+.course__start {
+  display: flex;
+  margin: 32px 0 32px;
+}
+
+.course__start p {
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+  color: #657195;
+}
+
+.course__start p .desktop,
+.course__start p .tablet,
+.course__start p .phone {
+  font-family: Roboto, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+  color: #3D3BFF;
+  padding-left: 5px;
+}
+
+.course__start p .tablet,
+.course__start p .phone {
+  display: none;
+}
+
+p.total {
+  padding-left: 34px;
+}
+
+/*  FORM  */
+form div {
+  margin-bottom: 21px;
+  max-width: 368px;
+}
+
+input {
+  padding: 0 30px;
+  width: 100%;
+  height: 60px;
+  font-family: OpenSans, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: #657195;
+  outline: none;  
+  background: #FAFBFE;
+  border: 2px solid #E6E8F0;
+}
+
+.btn__submit {
+  font-family: OpenSans, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #3D3BFF;
+  margin-bottom: 12px;
+}
+
+/*  CHECKBOX  */
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+ }
+
+ .checkbox label {
+  position: relative;
+  left: -3px;
+ }
+
+ .checkbox label::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #3D3BFF; 
+ }
+ /* for js error */
+ .checkbox label.error::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 24px;
+  border: 1px solid red; 
+ }
+
+ .checkbox input[type="checkbox"] + label::after {
+  content: none;
+ }
+
+ .checkbox label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background: #3D3BFF;
+ }
+ 
+ .checkbox input[type="checkbox"]:checked+label::after {
+   content: "";
+   height: 24px;
+   width: 24px;
+   background-image: url(../img/check.png);
+   background-repeat: no-repeat;
+   background-size: 60%;
+   background-position: 4px 7px;
+ }
+
+ .checkbox__checked,
+ .checkbox__checked a {
+   font-family: OpenSans, sans-serif;
+   font-size: 14px;
+   line-height: 21px;
+   letter-spacing: -0.5px;
+   color: #657195;
+   padding-left: 40px;
+ }
+
+ .checkbox__checked a {
+   padding-left: 44px;
+   color: #3D3BFF;
+   text-decoration: none;
+ }
+ /*  class for js */
+ .error {
+  font-family: OpenSans, sans-serif;
+   font-size: 15px;
+   line-height: 20px;
+   margin-top: 5px;
+   color: red;
+ }
+
+/*  MEDIA   */
+/*   less  992     */
+@media screen and (max-width: 992px) {
+
+  .container {
+    width: calc(100% - 60px);
+  }
+
+  .sale__block:before {
+    top: 97px;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 53px;
+    margin: 50px 0 76px;
+  }
+
+  .flex__container {
+    flex-direction: column;
+  }
+  /*  LEFT BLOCK COURSE PRICE  */
+  .course__price, .course__registration {
+    width: 100%;
+  }
+
+  .full__price {
+    margin: 68px 0 8px;
+  }
+
+  .not__payment {
+    font-size: 20px;
+  }
+
+  .best__price {
+    font-size: 18px;
+    margin-bottom: 73px;
+  }
+
+  /*  RIGHT BLOCK COURSE REGISTRATION  */
+  .course__registration {
+    padding-left: 122px;
+    padding-right: 122px;
+  }
+
+  h2 {
+    font-size: 38px;
+    line-height: 40px;
+    text-align: center;
+    margin: 69px 0 42px;
+  }
+
+  .phone__list li {
+    padding-bottom: 15px;
+  }
+
+  .course__start {
+    margin: 40px 0 28px;
+    justify-content: space-around;
+  }
+
+  .course__start p {
+    display: inherit;
+  }
+
+  .course__start p .tablet {
+    display: block;
+  }
+
+  .course__start p .desktop,
+  .course__start p .phone {
+    display: none;
+  }
+
+  /*  FORM  */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  form div {
+    max-width: 100%;
+  }
+
+  .form__btn {
+    order: 2;
+    margin-top: 8px;  
+    margin-bottom: 57px;
+  }
+
+  .btn__submit {
+    margin-bottom: 0;
+  }
+
+  .checkbox {
+    order: 1;
+    margin-top: 11px;
+  }
+
+  .checkbox__checked br {
+    display: none;
+  }
+
+  .checkbox__checked a {
+    padding-left: 2px;
+  }
+
+}
+
+/*   less  768     */
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
+    margin: 56px 0 71px;
+    padding: 0 10px;
+  }
+
+  /* LEFT BLOCK COURSE PRICE */
+  .full__price--through {
+    font-size: 36px;
+    line-height: 47px;
+  }
+
+  .month__price {
+    font-size: 56px;
+    line-height: 74px;
+  }
+
+  .not__payment {
+    font-size: 18px;
+  }
+
+  .best__price-year {
+    font-size: 40px;
+    line-height: 53px;
+  }
+
+  .best__price {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 41px;
+  }
+
+  /*  RIGHT BLOCK COURSE REGISTRATION  */
+  .course__registration {
+    padding-left: 25px;
+    padding-right: 26px;
+  }
+
+  h2 {
+    padding-right: 150px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: left;
+    margin: 40px 0 30px;
+  }
+
+  .course__start {
+    margin: 23px 0 33px;
+    flex-direction: column;
+  }
+
+  .course__start p .phone {
+    display: block;
+  }
+
+  .course__start p .desktop,
+  .course__start p .tablet {
+    display: none;
+  }
+
+  p.total {
+    padding-top: 15px;
+    padding-left: 0;
+  }
+
+  .checkbox__checked br {
+    display: block;
+  }
+
+  .checkbox__checked a {
+    padding-left: 44px;
+  }
+
+  .btn__submit {
+    height: 70px;
+  }
+
+  .form__btn {
+    margin-top: 28px;
+    margin-bottom: 55px;
+  }
+}
